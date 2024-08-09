@@ -103,7 +103,7 @@ class PortScanner(object):
 
         # regex used to detect masscan (http or https)
         regex = re.compile(
-            'Masscan version [0-9]*\.[0-9]*[^ ]* \( http(|s)://.* \)'
+            r'Masscan version [0-9]*\.[0-9]*[^ ]* \( http(|s)://.* \)'
         )
         # launch 'masscan -V', we wait after
         # 'Masscan version 1.0.3 ( https://github.com/robertdavidgraham/masscan )'
